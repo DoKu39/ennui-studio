@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ennui Studio</title>
+  <meta name="description" content="Blank">
+  <meta name="author" content="Ennui Studio">
+
+  <link rel="shortcut icon" href="img/favicon.png"/>
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <!-- LANDING -->
+
+  <div class="landing-bg">
+  </div>
+
+  <section id="landing">
+
+    <div class="home">
+      <h1>ENNUI STUDIO</h1>
+    </div>
+
+  </section>
+
+  <!-- VISION -->
+
+  <section id="vision">
+
+      <h1 data-aos="fade-up">THE STUDIO</h1>
+      <h2 data-aos="fade-up">ennui:<br><br><span style="font-style: italic;">a feeling of being bored and mentally tired caused by 
+      having nothing interesting or exciting to do.</span></h2>
+      <p data-aos="fade-up">ENNUI STUDIO was born under these circumstances, slowly turning itself into a powerfull tool for its collaborators in the constant struggle to improve themselves. ENNUI STUDIO is now a powerfull machine to externalize creativity and make learning happen.</p>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <h1 data-aos="fade-up">PROJECTS</h1>
+
+    <div data-aos="fade-up" class="box">
+
+      <a href="https://www.behance.net/gallery/95499691/ENNUI-time-is-golden" target="_blank">
+        <img src="img/ennui_watch.png" alt="ENNUI Watch" class="port">
+      </a>
+
+      <a href="https://www.behance.net/gallery/97776239/EVA-SERIES" target="_blank">
+        <img src="img/eva_series.png" alt="ENNUI Watch" class="port">
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h1 data-aos="fade-up">CONTACT</h1>
+
+    <h2 data-aos="fade-up">domenicotaormina39@gmail.com</h2>
+    <h2 data-aos="fade-up">+39 334 9597889</h2>
+
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 50, // values from 0 to 3000, with step 50ms
+  duration: 500, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+  </script>
+
+</body>
+
+<script> 
+  $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+    $('.landing-bg').css("opacity", 0.9- $(window).scrollTop() / 700) }) 
+  }) 
+</script> 
+
+</html>
+

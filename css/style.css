@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&family=Muli:wght@400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    color: #1a1a1a;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+h2{
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+.landing-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/landing_ennui.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    opacity: 0.9;
+}
+
+#landing{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#landing h1{
+    font-size: 6em;
+}
+
+#vision{
+    width: 100%;
+    max-width: 50%;
+    height: 70vh;
+    word-wrap: break-word;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+#vision h2{
+    padding: 5% 0 5% 0;
+}
+
+#vision p{
+    font-size: 1.2em;
+}
+
+#projects{
+    width: 100%;
+    max-width: 50%;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+#projects .box{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+}
+
+#projects .port{
+    margin: 20% 0 0 0;
+    max-height: 30vh;
+    max-width: 30vw;
+    filter: grayscale(100%);
+    transition: 0.2s ease-in-out;
+}
+
+#projects .port:hover{
+    filter: grayscale(0%);
+    transition: 0.2s ease-in-out;
+}
+
+#contact{
+    width: 100%;
+    max-width: 50%;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+#contact h1{
+    margin: 0 0 5% 0;
+}
+
+@media (max-width: 1280px){
+
+h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+h2{
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+.landing-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/landing_ennui.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    opacity: 0.9;
+}
+
+#landing{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#landing h1{
+    font-size: 4em;
+}
+
+#vision{
+    width: 100%;
+    max-width: 80%;
+    height: 100%;
+    word-wrap: break-word;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15%
+}
+
+#vision h2{
+    padding: 3% 0 3% 0;
+}
+
+#vision p{
+    font-size: 1.2em;
+}
+
+#projects{
+    width: 100%;
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15%
+}
+
+#projects .box{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+}
+
+#projects .port{
+    margin: 20% 0 0 0;
+    max-height: 40vh;
+    max-width: 40vw;
+    filter: grayscale(100%);
+    transition: 0.2s ease-in-out;
+}
+
+#projects .port:hover{
+    filter: grayscale(0%);
+    transition: 0.2s ease-in-out;
+}
+
+#contact{
+    width: 100%;
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15%
+}
+
+#contact h1{
+    margin: 0 0 5% 0;
+}
+
+}
+
+@media (max-width: 768px){
+
+h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    font-size: 4em !important;
+}
+
+h2{
+    font-size: 2.2em;
+}
+
+.landing-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/landing_ennui.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+#landing{
+    position: relative;
+    height: 100vh;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#vision{
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    word-wrap: break-word;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin: 20% 5% 20% 5%;
+}
+
+#vision h2{
+    padding: 5% 0 5% 0;
+}
+
+#vision p{
+    font-size: 1.2em;
+}
+
+#projects{
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin: 10% 5% 10% 5%;
+}
+
+#projects .box{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    flex-direction: row !important;
+}
+
+#projects .port{
+    margin: 5% 0 0 0;
+    padding: 5%;
+    max-height: 100%;
+    max-width: 100%;
+    filter: grayscale(0%);
+}
+
+#contact{
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin: 20% 5% 20% 5%;
+}
+
+#contact h1{
+    margin: 0 0 5% 0;
+}
+
+}
+
+@media (max-width: 576px){
+
+h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    font-size: 2.4em !important;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+.landing-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/landing_ennui.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+#landing{
+    position: relative;
+    height: 100vh;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#landing h1{
+    font-size: 3em !important;
+}
+
+#vision{
+    width: 100%;
+    max-width: 80%;
+    height: 100%;
+    word-wrap: break-word;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin: 20% 5% 20% 5%;
+}
+
+#vision h2{
+    padding: 5% 0 5% 0;
+}
+
+#vision p{
+    font-size: 1.2em;
+}
+
+#projects{
+    width: 100%;
+    max-width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin: 20% 5% 20% 5%;
+}
+
+#projects .box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column !important;
+}
+
+#projects .port{
+    margin: 10% 0 0 0;
+    max-height: 90vh;
+    max-width: 90vw;
+    filter: grayscale(0%);
+}
+
+#contact{
+    width: 100%;
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin: 20% 5% 20% 5%;
+}
+
+#contact h1{
+    margin: 0 0 5% 0;
+}
+
+#contact h2{
+    font-size: 1.4em;
+}
+
+}
